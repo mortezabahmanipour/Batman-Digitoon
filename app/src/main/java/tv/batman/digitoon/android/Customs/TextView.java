@@ -49,7 +49,7 @@ public class TextView extends AppCompatTextView {
 
     protected void initialize() {
         setIncludeFontPadding(false);
-        setTypeface(AndroidUtilities.IRANSans_FaNum, faceStyle);
+//        setTypeface(AndroidUtilities.IRANSans_FaNum, faceStyle);
         setDrawableSize();
         setText(getText());
     }
