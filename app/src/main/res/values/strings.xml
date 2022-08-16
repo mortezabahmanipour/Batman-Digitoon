@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Digitoon Batman</string>
+    <string name="play_video">Play</string>
+    <string name="more_parts">More Parts</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="constructive_factors">Constructive Factors</string>
+    <string name="about">About</string>
+    <string name="ratings">Ratings</string>
+</resources>

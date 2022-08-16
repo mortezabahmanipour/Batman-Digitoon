@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:splitMotionEvents="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <tv.batman.digitoon.android.Customs.VideoInfoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <tv.batman.digitoon.android.Customs.ImageView
+                android:id="@+id/ivThumbnail"
+                android:layout_width="100dp"
+                android:layout_height="148dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="70dp"/>
+
+            <tv.batman.digitoon.android.Customs.TextView
+                android:id="@+id/tvVideoTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"/>
+
+            <tv.batman.digitoon.android.Customs.TextView
+                android:id="@+id/tvVideoInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"/>
+
+            <tv.batman.digitoon.android.Customs.CircleProgressbar
+                android:id="@+id/pbLoading"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+
+            <tv.batman.digitoon.android.Customs.TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_centerInParent="true"/>
+
+            <LinearLayout
+                android:id="@+id/videoContentLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="25dp">
+
+                <tv.batman.digitoon.android.Customs.TextView
+                    android:id="@+id/tvPlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="14sp"
+                    android:textColor="#FFFFFFFF"
+                    android:text="@string/play_video"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <tv.batman.digitoon.android.Customs.TextView
+                    android:id="@+id/tvMoreParts"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <View
+                    android:tag="shadow_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <tv.batman.digitoon.android.Customs.TextView
+                    android:id="@+id/tvSynopsisName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/synopsis"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <tv.batman.digitoon.android.Customs.TextView
+                    android:id="@+id/tvSynopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <View
+                    android:tag="shadow_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <tv.batman.digitoon.android.Customs.TextView
+                    android:id="@+id/tvAboutName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/about"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <tv.batman.digitoon.android.Customs.TextView
+                    android:id="@+id/tvAbout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <View
+                    android:tag="shadow_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <tv.batman.digitoon.android.Customs.TextView
+                    android:id="@+id/tvConstructiveFactorsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/constructive_factors"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <tv.batman.digitoon.android.Customs.TextView
+                    android:id="@+id/tvConstructiveFactors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <View
+                    android:id="@+id/shadowRatings"
+                    android:tag="shadow_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <tv.batman.digitoon.android.Customs.TextView
+                    android:id="@+id/tvRatingsName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:text="@string/ratings"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+                <tv.batman.digitoon.android.Customs.ListItem
+                    android:id="@+id/listItemRatings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"/>
+
+            </LinearLayout>
+
+        </tv.batman.digitoon.android.Customs.VideoInfoLinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="#FFFFFFFF"
+        android:splitMotionEvents="false"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp">
+
+        <tv.batman.digitoon.android.Customs.ImageView
+            android:id="@+id/ivBack"
+            style="@style/ToolbarButton"
+            android:src="@drawable/ic_arrow_back"
+            android:rotation="180"
+            android:layout_alignParentLeft="true"/>
+
+        <tv.batman.digitoon.android.Customs.TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextViewTitle"
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/toolbar_height"
+            android:layout_marginRight="@dimen/toolbar_height"/>
+
+        <tv.batman.digitoon.android.Customs.ImageView
+            android:id="@+id/ivDownload"
+            style="@style/ToolbarButton"
+            android:src="@drawable/ic_file_download"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/shadowToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:alpha="0.0"
+        android:layout_below="@+id/toolbar"/>
+
+</RelativeLayout>
