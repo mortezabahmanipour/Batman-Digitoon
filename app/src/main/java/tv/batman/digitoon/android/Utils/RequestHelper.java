@@ -91,8 +91,8 @@ public class RequestHelper {
       logBuilder.append("headers ->\n");
       logBuilder.append(headers);
     }
+    JSONObject postObject = new JSONObject();
     if (params != null && !params.isEmpty()) {
-      JSONObject postObject = new JSONObject();
       try {
         for (HashMap.Entry<String, Object> entry : params.entrySet()) {
           postObject.put(entry.getKey(), entry.getValue());
@@ -100,11 +100,10 @@ public class RequestHelper {
       } catch (Exception e) {
         AppLog.e(RequestHelper.class, e.getMessage());
       }
-      builder.post(RequestBody.create(postObject.toString(), MediaType.parse("application/json")));
-
       logBuilder.append("\nposts ->\n");
       logBuilder.append(postObject);
     }
+    builder.post(RequestBody.create(postObject.toString(), MediaType.parse("application/json")));
     okHttpClient.newCall(builder.build()).enqueue(new Callback() {
 
       @Override
